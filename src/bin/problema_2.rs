@@ -39,6 +39,5 @@ fn main() {
 
         println!("{}",validos2.count());
 
-    
 }
 
