@@ -28,7 +28,7 @@ fn main() {
 
     println!("{:?}",salida);
 
-    let limites = (0..numeros.len()-1).find_map(|ic|{
+    let suma_extremos = (0..numeros.len()-1).find_map(|ic|{
         let posible = ((ic+1)..numeros.len()).find_map(|fc|{
             let suma = numeros[ic..fc].iter().fold(0, |acc, &x| acc + x);
             if suma >= *salida {
@@ -49,8 +49,7 @@ fn main() {
         }
     });
     
-
-    println!("{:?}",limites);
+    println!("{:?}",suma_extremos);
 
 }
 
